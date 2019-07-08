@@ -1414,3 +1414,8 @@ int32_t SystemNative_LChflagsCanSetHiddenFlag(void)
     return false;
 #endif
 }
+
+int32_t SystemNative_Symlink(const char* target, const char* linkPath)
+{
+    return symlink(target, linkPath);
+}
